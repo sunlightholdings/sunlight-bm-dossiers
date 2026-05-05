@@ -3,15 +3,42 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Berger Montague — Wage &amp; Hour Origination Packet · Sunlight</title>
-<meta name="description" content="A staged four-lead acquisition packet prepared for Berger Montague: two regular-rate cases, two reclassification cases. $50,000 per reserved case." />
+<title>Sunlight — Wage &amp; Hour Lead Dossiers · Berger Montague</title>
+<meta name="description" content="Sunlight is an artisan partner to leading class action firms. Four wage-and-hour lead dossiers prepared for Berger Montague: regular-rate and reclassification cases with full evidence layers." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230f1714'/><path d='M8 22 L16 8 L24 22 Z' fill='none' stroke='%23c9a96a' stroke-width='1.6'/></svg>" />
 </head>
-<body>
+<body class="locked">
+
+<!-- ACCESS GATE -->
+<section class="access-gate" id="accessGate" aria-labelledby="accessTitle" aria-describedby="accessSub">
+  <div class="access-gate__mark" aria-hidden="true">
+    <svg viewBox="0 0 48 48" width="48" height="48">
+      <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      <path d="M24 7 L24 41 M7 24 L41 24 M12 12 L36 36 M36 12 L12 36" stroke="currentColor" stroke-width="0.9" opacity="0.48"/>
+      <circle cx="24" cy="24" r="3" fill="currentColor"/>
+    </svg>
+  </div>
+  <div class="access-gate__panel">
+    <p class="access-gate__eyebrow">Sunlight Holdings · Berger Montague</p>
+    <h1 class="access-gate__title" id="accessTitle">Private wage-and-hour dossiers.</h1>
+    <p class="access-gate__sub" id="accessSub">
+      A confidential four-lead briefing prepared for Berger Montague. Enter the access phrase to continue.
+    </p>
+    <form class="access-gate__form" id="accessForm" autocomplete="off">
+      <label class="access-gate__label" for="accessPhrase">Access phrase</label>
+      <div class="access-gate__row">
+        <input class="access-gate__input" id="accessPhrase" name="accessPhrase" type="password" inputmode="text" spellcheck="false" autocomplete="off" aria-describedby="accessError" />
+        <button class="access-gate__button" type="submit">Enter</button>
+      </div>
+      <p class="access-gate__error" id="accessError" role="alert" aria-live="polite"></p>
+    </form>
+  </div>
+  <p class="access-gate__foot">Attorney work-product preview · recipient access only</p>
+</section>
 
 <!-- TOP BAR -->
 <header class="topbar" role="banner">
@@ -23,12 +50,11 @@
       </svg>
       <span class="brand__word">Sunlight</span>
       <span class="brand__sep" aria-hidden="true">/</span>
-      <span class="brand__client">Berger Montague — W&amp;H Packet</span>
+      <span class="brand__client">Wage &amp; Hour Dossiers</span>
     </a>
     <nav class="topbar__nav" aria-label="Section">
-      <a href="#leads">Leads</a>
-      <a href="#terms">Terms</a>
-      <a href="#cover">Cover email</a>
+      <a href="#leads">Dossiers</a>
+      <a href="#process">How it works</a>
       <a href="#sources">Sources</a>
     </nav>
   </div>
@@ -42,41 +68,28 @@
     <div class="hero__lede">
       <div class="eyebrow">
         <span class="eyebrow__dot" aria-hidden="true"></span>
-        Confidential origination packet · prepared for Shanon Carson &amp; Alexandra Piazza
+        Sunlight Holdings · prepared for Berger Montague
       </div>
       <h1 class="hero__title">
-        Four wage-and-hour cases, <span class="accent-rule">staged for reservation.</span>
+        Four wage-and-hour <span class="accent-rule">lead dossiers.</span>
       </h1>
       <p class="hero__sub">
-        Two regular-rate math cases modeled on the Anstead / Ascension pattern.
-        Two reclassification cases on Berger Montague's own public investigation shelves. Every lead is a case file — not a list — and every reservation buys days-to-complaint readiness.
+        Two regular-rate matters in the Anstead / Ascension pattern. Two reclassification
+        matters on the utilization-review and managed-care case-manager shelves.
+        Each is a working case file — thesis, evidence layers, intake script, and
+        defense red-team — not a list of names.
       </p>
 
       <div class="hero__cta">
-        <a class="btn btn--primary" href="#leads">Review the four leads</a>
-        <a class="btn btn--ghost" href="#terms">Commercial terms</a>
+        <a class="btn btn--primary" href="#leads">Open the four dossiers</a>
+        <a class="btn btn--ghost" href="#process">How Sunlight works</a>
       </div>
-
-      <dl class="hero__facts" aria-label="Headline terms">
-        <div class="fact">
-          <dt>Reservation fee</dt>
-          <dd><span class="fact__num">$50,000</span><span class="fact__unit">per case, upfront</span></dd>
-        </div>
-        <div class="fact">
-          <dt>Bundle</dt>
-          <dd><span class="fact__num">$175,000</span><span class="fact__unit">all four leads</span></dd>
-        </div>
-        <div class="fact">
-          <dt>Exclusivity</dt>
-          <dd><span class="fact__num">7</span><span class="fact__unit">business days post-delivery</span></dd>
-        </div>
-      </dl>
     </div>
 
     <aside class="hero__panel" aria-labelledby="panel-h">
-      <h2 id="panel-h" class="panel__h">What $50K buys</h2>
+      <h2 id="panel-h" class="panel__h">What Sunlight Does</h2>
       <ul class="panel__list">
-        <li><span>Source inventory</span><em>file-level, not links</em></li>
+        <li><span>Dossier Intelligence</span><em>file-level, not links</em></li>
         <li><span>Final docket sweep</span><em>federal + state, 3-yr</em></li>
         <li><span>Plaintiff-intake script</span><em>tested, role-specific</em></li>
         <li><span>Complaint architecture</span><em>claim-by-claim</em></li>
@@ -84,8 +97,7 @@
         <li><span>Named-plaintiff sourcing plan</span><em>worker queries reserved</em></li>
       </ul>
       <p class="panel__foot">
-        Berger is not buying defendant names. Berger is buying a case file
-        that moves from review to plaintiff call to complaint in <em>days</em>.
+        We are an artisan partner to the top class action law firms.
       </p>
     </aside>
   </div>
@@ -95,16 +107,20 @@
 <section class="strip" aria-label="Positioning">
   <div class="container strip__row">
     <div class="strip__cell">
-      <div class="strip__k">Anstead twin</div>
-      <div class="strip__v">$19.74M settlement · ~84,600 healthcare workers · co-lead Berger Montague</div>
+      <div class="strip__k">Anstead anchor</div>
+      <div class="strip__v">$19.74M settlement · ~84,600 healthcare workers · co-led by Berger Montague</div>
     </div>
     <div class="strip__cell">
-      <div class="strip__k">Berger's own shelves</div>
-      <div class="strip__v">UR/HEDIS nurses · healthcare case managers · miscalculated overtime</div>
+      <div class="strip__k">Berger's public shelves</div>
+      <div class="strip__v">UR / HEDIS nurses · healthcare case managers · miscalculated overtime</div>
     </div>
     <div class="strip__cell">
-      <div class="strip__k">Damages state of choice</div>
+      <div class="strip__k">Highest-leverage state</div>
       <div class="strip__v">Illinois — IMWL treble + 5% monthly penalty overlay</div>
+    </div>
+    <div class="strip__cell strip__cell--wide">
+      <div class="strip__k">Verification status</div>
+      <div class="strip__v">Public citations and case-law anchors verified as of May 5, 2026, 10:55 a.m. UTC / 6:55 a.m. ET. Public-web and case-law sweep only; no paid PACER login.</div>
     </div>
   </div>
 </section>
@@ -113,12 +129,12 @@
 <section id="leads" class="leads">
   <div class="container">
     <header class="section__head">
-      <div class="section__eyebrow">The shelf</div>
-      <h2 class="section__h">Four leads. Two shelves. One reservation window.</h2>
+      <div class="section__eyebrow">Lead dossiers</div>
+      <h2 class="section__h">Four dossiers. Two shelves. Click any card to open the file.</h2>
       <p class="section__sub">
-        Click any card for thesis, proof path, intake script, and a defense red team.
-        Only the first regular-rate lead is positioned for immediate priority reserve;
-        the others stage behind conflict, carveout, or docket review.
+        Each dossier carries a buyer-facing thesis, doctrinal anchors, evidence layers,
+        a tested intake script, and a defense red-team. The reclassification dossiers
+        ship with explicit carveout and verification notes.
       </p>
     </header>
 
@@ -128,17 +144,17 @@
   </div>
 </section>
 
-<!-- COMMERCIAL TERMS -->
-<section id="terms" class="terms">
+<!-- HOW SUNLIGHT WORKS -->
+<section id="process" class="terms">
   <div class="container terms__grid">
     <div class="terms__lede">
-      <div class="section__eyebrow">Commercial frame</div>
-      <h2 class="section__h">Staged disclosure. Reserved exclusivity. Credited on co-counsel.</h2>
+      <div class="section__eyebrow">How Sunlight works</div>
+      <h2 class="section__h">Dossier architecture, evidence layers, and the engagement frame.</h2>
       <p class="section__sub">
-        The packet is designed to be enough for Berger to see why each lead is valuable
-        and why Sunlight's origination work is differentiated — without releasing the
-        plaintiff-intake pathways, worker-search queries, and source-file architecture
-        that turn a thesis into a filed case.
+        Sunlight builds case files the way a well-run firm would build them
+        internally — sourced from public docket, regulatory, and corporate signal,
+        layered with internal prototype scoring, and sharpened against a defense
+        red-team before it ever reaches a partner's desk.
       </p>
     </div>
 
@@ -146,85 +162,46 @@
       <li>
         <span class="terms__num">01</span>
         <div>
-          <h3>Per-case reservation</h3>
-          <p><strong>$50,000 upfront</strong> per selected lead, payable on reservation. Triggers full evidence pack.</p>
+          <h3>Signal selection</h3>
+          <p>We start from a thesis, not a list. Each case is selected because the public record carries doctrinal authority, the pay-practice signal is visible, and the damages state improves leverage.</p>
         </div>
       </li>
       <li>
         <span class="terms__num">02</span>
         <div>
-          <h3>Bundle</h3>
-          <p><strong>$175,000 upfront</strong> for all four leads — exclusivity across both shelves.</p>
+          <h3>Dossier architecture</h3>
+          <p>Every dossier carries six sections: thesis, doctrinal anchors, evidence layers, intake script, defense red-team, and a buyer-facing summary. Sections are written so a partner can read top-to-bottom in ten minutes.</p>
         </div>
       </li>
       <li>
         <span class="terms__num">03</span>
         <div>
-          <h3>Exclusivity window</h3>
-          <p><strong>7 business days</strong> after delivery of the full evidence pack and intake script per reserved lead.</p>
+          <h3>Evidence layers</h3>
+          <p>Public-record citations sit at the top layer. Internal prototype scoring (target score, class estimate, modeled gross) sits below, clearly marked as estimate. Plaintiff-intake pathways and worker-search queries sit deeper still, reserved until engagement.</p>
         </div>
       </li>
       <li>
         <span class="terms__num">04</span>
         <div>
-          <h3>Fee fallback</h3>
-          <p>If Berger resists a pure purchase price, the payment is positioned as an origination / diligence / intake fee, <strong>credited only if the parties later sign co-counsel or referral.</strong></p>
+          <h3>Carveout discipline</h3>
+          <p>For reclassification leads where a related case has already been filed, we deliver a carveout map: uncovered states, non-overlapping titles, later time periods, sister affiliates, and release-scope gaps. We do not resell filed cases.</p>
         </div>
       </li>
       <li>
         <span class="terms__num">05</span>
         <div>
-          <h3>Two-step option</h3>
-          <p>If $50K is friction: <strong>$15K for a 7-day reserve / conflict review</strong>, balance to $50K if Berger requests the full evidence pack.</p>
+          <h3>Verification required</h3>
+          <p>Internal prototype estimates and class-size figures are flagged as estimates. Named-plaintiff facts, paystubs, arbitration status, and PACER release-scope checks are gaps to be verified; every dossier names them explicitly.</p>
         </div>
       </li>
       <li>
         <span class="terms__num">06</span>
         <div>
-          <h3>Deliverables on reservation</h3>
-          <p>Source inventory · final docket sweep · plaintiff-intake script · complaint architecture · damages model · state-law overlay · named-plaintiff sourcing plan.</p>
+          <h3>Engagement note</h3>
+          <p>If a dossier moves forward, Sunlight holds the sourcing pathway for <strong>one week</strong> while the firm reviews the full file and decides where it wants deeper diligence.</p>
         </div>
       </li>
     </ol>
-  </div>
-</section>
-
-<!-- COVER EMAIL -->
-<section id="cover" class="cover">
-  <div class="container">
-    <header class="section__head">
-      <div class="section__eyebrow">Suggested cover</div>
-      <h2 class="section__h">A two-paragraph email Shanon and Alex can answer in one line.</h2>
-    </header>
-
-    <div class="email" data-collapsed="true">
-      <div class="email__head">
-        <div class="email__meta">
-          <div><span class="email__k">To</span><span class="email__v">Shanon Carson · Alexandra Piazza</span></div>
-          <div><span class="email__k">From</span><span class="email__v">Sina · Sunlight Holdings</span></div>
-          <div><span class="email__k">Subject</span><span class="email__v">Four W&amp;H opportunities for review — two regular-rate, two reclassification</span></div>
-        </div>
-        <div class="email__actions">
-          <button class="btn btn--ghost btn--sm" type="button" id="copyEmail" aria-live="polite">Copy</button>
-          <button class="btn btn--ghost btn--sm" type="button" id="toggleEmail" aria-expanded="false" aria-controls="emailBody">Expand</button>
-        </div>
-      </div>
-
-      <div class="email__body" id="emailBody">
-<pre id="emailText">Shanon and Alex,
-
-Attached is the staged index for the four wage-and-hour opportunities I mentioned: two regular-rate math cases and two reclassification cases.
-
-The two regular-rate cases are the cleanest Anstead-style opportunities from the current shelf. The first is a major Illinois hospital-system target with the Ascension fact pattern. The second is a cleaner Illinois manufacturing / pharma shift-differential target that avoids some of the obvious LMRA issues in larger union-heavy alternatives.
-
-The two reclassification cases are managed-care expansion plays in the categories Berger already knows well: utilization-review nurses and healthcare case managers. I flagged the carveout issues directly because the value here is not just naming defendants; it is the map of which roles, states, time periods, and intake questions can still produce a clean case.
-
-If you want to reserve any of these, I can deliver the full source inventory, final docket screen, intake script, damages model, and named-plaintiff sourcing plan. My proposed structure is $50K per reserved case, paid upfront, with a short exclusivity window while you review the full file.
-
-Best,
-Sina</pre>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -234,18 +211,30 @@ Sina</pre>
     <header class="section__head">
       <div class="section__eyebrow">Public citations</div>
       <h2 class="section__h">Source register</h2>
-      <p class="section__sub">Public-record anchors only. Sunlight's plaintiff-intake pathways, worker-search queries, and source-file architecture are reserved until Berger reserves a case.</p>
+      <p class="section__sub">Public-record anchors only. Sunlight's internal scoring is a working estimate from our prototype model, not a public claim. Public citations and case-law anchors were verified as of May 5, 2026, 10:55 a.m. UTC / 6:55 a.m. ET through public-web and case-law sources; no paid PACER login was used. Plaintiff-intake pathways, worker-search queries, and source-file architecture are reserved.</p>
     </header>
 
+    <div class="riskbox" aria-label="Verification caveats">
+      <h3>Flagged risks after verification</h3>
+      <ul>
+        <li>Northwestern Kronos is a medium-confidence public signal: Epic is directly verified, while Kronos rests on NMH operations-job language pending paystub or worker confirmation.</li>
+        <li>CVS/Aetna and Centene carveouts require paid PACER review for settlement, release, counsel, and current docket posture before plaintiff outreach or final disclosure.</li>
+        <li>No new public wage-theory filings surfaced in the last 90 days for the four targets, but this was not a paid PACER docket sweep.</li>
+      </ul>
+    </div>
+
     <ul class="sources__list">
-      <li><span>Anstead v. Ascension — settlement page</span><a href="https://bergermontague.com/cases/anstead-et-al-v-ascension-health-et-al-unpaid-overtime-settlement/" rel="noopener" target="_blank">bergermontague.com</a></li>
-      <li><span>Miscalculated overtime investigation</span><a href="https://bergermontague.com/cases/miscalculated-overtime-pay-lawsuit-investigation/" rel="noopener" target="_blank">bergermontague.com</a></li>
-      <li><span>Healthcare case-manager investigation</span><a href="https://bergermontague.com/cases/recovering-lost-overtime-wages-for-healthcare-company-case-managers/" rel="noopener" target="_blank">bergermontague.com</a></li>
-      <li><span>UR / HEDIS nurse investigation</span><a href="https://bergermontague.com/cases/lawsuit-investigation-utilization-review-nurse-unpaid-wages/" rel="noopener" target="_blank">bergermontague.com</a></li>
+      <li><span>Anstead v. Ascension — settlement page (Berger Montague)</span><a href="https://bergermontague.com/cases/anstead-et-al-v-ascension-health-et-al-unpaid-overtime-settlement/" rel="noopener" target="_blank">bergermontague.com</a></li>
+      <li><span>Miscalculated overtime investigation (Berger Montague)</span><a href="https://bergermontague.com/cases/miscalculated-overtime-pay-lawsuit-investigation/" rel="noopener" target="_blank">bergermontague.com</a></li>
+      <li><span>Healthcare case-manager investigation (Berger Montague)</span><a href="https://bergermontague.com/cases/recovering-lost-overtime-wages-for-healthcare-company-case-managers/" rel="noopener" target="_blank">bergermontague.com</a></li>
+      <li><span>UR / HEDIS nurse investigation (Berger Montague)</span><a href="https://bergermontague.com/cases/lawsuit-investigation-utilization-review-nurse-unpaid-wages/" rel="noopener" target="_blank">bergermontague.com</a></li>
       <li><span>CVS UM/UR misclassification suit summary</span><a href="https://www.classaction.org/news/cvs-health-misclassified-utilization-management-workers-as-exempt-from-overtime-pay-lawsuit-alleges" rel="noopener" target="_blank">classaction.org</a></li>
-      <li><span>Baker v. Anthem (defense-side commentary)</span><a href="https://www.fisherphillips.com/en/insights/insights/review-nurses-entitled-overtime-pending-federal-case" rel="noopener" target="_blank">fisherphillips.com</a></li>
+      <li><span>Benton et al. v. CVS Health Corp. complaint PDF</span><a href="https://www.classaction.org/media/benton-et-al-v-cvs-health-corporation.pdf" rel="noopener" target="_blank">classaction.org</a></li>
+      <li><span>Baker v. Anthem — defense-side commentary</span><a href="https://www.fisherphillips.com/en/insights/insights/review-nurses-entitled-overtime-pending-federal-case" rel="noopener" target="_blank">fisherphillips.com</a></li>
       <li><span>Clark v. Centene — opinion (PDF)</span><a href="https://www.classaction.org/media/clark-v-centene-company.pdf" rel="noopener" target="_blank">classaction.org</a></li>
       <li><span>Centene Management / Sunshine Health LTC case-manager note</span><a href="https://www.talbottlawfirm.com/articles/our-cases/unpaid-wages/centene-management-company-llc-and-sunshine-heal/" rel="noopener" target="_blank">talbottlawfirm.com</a></li>
+      <li><span>AbbVie Workday Payroll Specialist job posting</span><a href="https://careers.abbvie.com/en/job/workday-payroll-specialist-in-north-chicago-il-jid-4736" rel="noopener" target="_blank">careers.abbvie.com</a></li>
+      <li><span>Northwestern Medicine EpicCare Link</span><a href="https://www.nm.org/for-medical-professionals/epiccare" rel="noopener" target="_blank">nm.org</a></li>
     </ul>
   </div>
 </section>
@@ -255,10 +244,10 @@ Sina</pre>
 <footer class="foot">
   <div class="container foot__row">
     <div class="foot__l">
-      <span>Prepared by Sunlight Holdings · May 4, 2026</span>
+      <span>Sunlight Holdings · Confidential</span>
     </div>
     <div class="foot__r">
-      <span>Confidential. For Berger Montague review only.</span>
+      <span>An artisan partner to the top class action law firms.</span>
     </div>
   </div>
 </footer>
